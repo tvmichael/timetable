@@ -14,10 +14,22 @@
                         </div>
                     </div>
                     <div class="panel-body">
-
-
-
-
+                        <?php
+                        $attributes  = array(
+                            'method' => 'post',
+                            'id'=>'load-file',
+                            'enctype' => 'multipart/form-data'
+                        );
+                        echo form_open('login/upload_file', $attributes);
+                        $attributes = array(
+                            'name'    => 'xmlfile',
+                            'type'    => 'file'
+                        );
+                        echo form_input($attributes);
+                        echo '<br>';
+                        echo form_submit('loadfile', 'Завантажити файл', array('class'=>'btn btn-default'));
+                        echo form_close();
+                        ?>
                     </div>
                 </div>
             </div>
