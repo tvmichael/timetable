@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+//$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/timetable/';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +36,8 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+//$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -76,7 +78,9 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+
+//$config['language']	= 'english';
+$config['language']	= 'ukrainian';
 
 /*
 |--------------------------------------------------------------------------
@@ -432,7 +436,8 @@ $config['standardize_newlines'] = FALSE;
 |          for backwards compatibility purposes!
 |
 */
-$config['global_xss_filtering'] = FALSE;
+//$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------

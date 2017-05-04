@@ -1,7 +1,12 @@
-#RewriteEngine On
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^(.*)$ index.php
+#Заборонити доступ до файла .htaccess у випадку, якщо це дозволено на сервері
+RewriteRule .htaccess - [F]
 
-# off axcess to file
+# включаємо настройку правил
+RewriteEngine On
+# якщо запит в корневому каталогу то переправляємо на файл: index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+# Забороняємо перегляд вмісту папок
 Options All -Indexes

@@ -75,12 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => '',
+	'hostname' => 'localhost',                      // host
+	'username' => 'root',                           // user name
+	'password' => '',                               // password
+	'database' => 'm_timetable',                    // base name
 	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
+	'dbprefix' => 'tt_',                            // prefix add to table name
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
