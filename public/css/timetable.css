@@ -1,0 +1,46 @@
+
+/*
+TIMETABLE STYLE
+  td-cell : style table cell,
+  tt-con : timetable-container
+
+  tt-c-n : timetable-container-number
+  tt-c-g : timetable-container-group
+  tt-c-s : timetable-container-subject
+  tt-c-t : 
+  tt-c-c : timetable-container-class
+*/
+@import url('https://fonts.googleapis.com/css?family=Coustard');
+
+.td-cell {
+
+}
+
+.tt-c-n{
+    font-family: 'Coustard', serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+}
+
+.tt-con{
+    padding: 0px 0px 5px 0px;
+}
+
+/*-----*/
+.tt-c-g{
+    color: grey;
+}
+
+.tt-c-s{
+    font-weight: bold;
+}
+
+.tt-c-t{
+    color: #b92c28;
+}
+
+.tt-c-c{
+    color: #761c19;
+}
+
