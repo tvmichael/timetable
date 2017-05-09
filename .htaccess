@@ -1,5 +1,5 @@
 #Заборонити доступ до файла .htaccess у випадку, якщо це дозволено на сервері
-RewriteRule .htaccess - [F]
+# RewriteRule .htaccess - [F]
 
 # включаємо настройку правил
 RewriteEngine On
