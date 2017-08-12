@@ -8,7 +8,7 @@ TimeTable ...
 Release Information
 *******************
 
-This ...  ` Downloads <http://timetable.com/download>`_ page.
+This ...  ` Open <http://meduch.esy.es/timetable/>`_ page.
 
 **************************
 Changelog and New Features
